@@ -1,19 +1,19 @@
 version: 2
 
 postal:
-  web_hostname: postal.oxcesseg.com
+  web_hostname: mi.trustoutboxment.com
   web_protocol: https
-  smtp_hostname: postal.oxcesseg.com
+  smtp_hostname: mi.trustoutboxment.com
 
 main_db:
   host: 172.17.1.85
-  username: root
+  username: postal
   password: posa1passw0d
   database: postal
 
 message_db:
-  host: 172.17.1.61
-  username: root
+  host: 172.17.1.85
+  username: postal
   password: posa1passw0d
   prefix: postal
 
