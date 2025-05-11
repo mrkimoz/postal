@@ -13,3 +13,7 @@ For Postal v3 you can use the following:
 curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/main.sh | bash
 ```
 
+```bash
+curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/smtp-initialize.sh | bash
+```
+
