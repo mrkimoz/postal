@@ -33,3 +33,25 @@ smtp_server:
 
 workers:
   enabled: false
+
+dns:
+  # Specify the DNS records that you have configured. Refer to the documentation at
+  # https://github.com/atech/postal/wiki/Domains-&-DNS-Configuration for further
+  # information about these.
+  mx_records:
+    - mx.mi.trustoutboxment.com
+  spf_include: spf.mi.trustoutboxment.com
+  return_path_domain: rp.mi.trustoutboxment.com
+  route_domain: routes.mi.trustoutboxment.com
+  track_domain: track.mi.trustoutboxment.com
+
+smtp:
+  # Specify an SMTP server that can be used to send messages from the Postal management
+  # system to users. You can configure this to use a Postal mail server once the
+  # your installation has been set up.
+  host: 127.0.0.1
+  port: 2525
+  username: # Complete when Postal is running and you can
+  password: # generate the credentials within the interface.
+  from_name: Postal
+  from_address: mi.trustoutboxment.com
