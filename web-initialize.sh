@@ -7,12 +7,12 @@
 # Bootstraping Postal
 postal bootstrap mi.trustoutboxment.com
 cd /opt/postal/config/
-wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/SMTP-postal.yml
-awk '/^rails:/ {print; in_rails=1; next} in_rails && /^  / {print; next} in_rails {exit}' /opt/postal/config/postal.yml >> SMTP-postal.yml
+wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/API-postal.yml
+awk '/^rails:/ {print; in_rails=1; next} in_rails && /^  / {print; next} in_rails {exit}' /opt/postal/config/postal.yml >> API-postal.yml
 mv /opt/postal/config/postal.yml /opt/postal/config/postal.yml.original
-cp -r SMTP-postal.yml postal.yml
+cp -r API-postal.yml postal.yml
 mv /opt/postal/install/docker-compose.yml /opt/postal/install/docker-compose.yml.old
 cd /opt/postal/install/
-wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/SMTP-Compose.yml
-cp -r SMTP-Compose.yml docker-compose.yml
+wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/WEB-Compose.yml
+cp -r WEB-Compose.yml docker-compose.yml
 postal start
