@@ -5,7 +5,8 @@
 # Phone      : +201062008120
 
 # Bootstraping Postal
-postal bootstrap mi.trustoutboxment.com
+postal stop 
+postal bootstrap app.obmengine.com
 cd /opt/postal/config/
 wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/SMTP-postal.yml
 awk '/^rails:/ {print; in_rails=1; next} in_rails && /^  / {print; next} in_rails {exit}' /opt/postal/config/postal.yml >> SMTP-postal.yml
