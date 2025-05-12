@@ -1,0 +1,22 @@
+127.0.0.1 localhost
+
+172.17.1.51 api1 api1.obmengine.com
+172.17.1.52 api2 api2.obmengine.com
+172.17.1.53 api3 api3.obmengine.com
+172.17.1.41 app-lb1 app-lb1.obmengine.com
+172.17.1.42 app-lb2 app-lb2.obmengine.com
+172.17.1.61 mysql1 mysql1.obmengine.com
+172.17.1.62 mysql2 mysql2.obmengine.com
+172.17.1.63 mysql3 mysql3.obmengine.com
+172.17.1.81 mysql-lb1 mysql-lb1.obmengine.com
+172.17.1.82 mysql-lb2 mysql-lb2.obmengine.com
+172.17.1.71 redis1 redis1.obmengine.com
+172.17.1.72 redis2 redis2.obmengine.com
+172.17.1.73 redis3 redis3.obmengine.com
+172.17.1.101 smtp1 smtp1.obmengine.com
+172.17.1.102 smtp2 smtp2.obmengine.com
+172.17.1.103 smtp3 smtp3.obmengine.com
+172.17.1.104 smtp4 smtp4.obmengine.com
+172.17.1.105 smtp5 smtp5.obmengine.com
+172.17.1.106 smtp6 smtp6.obmengine.com
+172.17.1.107 smtp7 smtp7.obmengine.com
