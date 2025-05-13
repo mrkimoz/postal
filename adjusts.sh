@@ -14,8 +14,7 @@ if [ -z "$NEW_HOSTNAME" ]; then
 fi
 hostnamectl set-hostname "$NEW_HOSTNAME"
 echo "Changing hostname to '$NEW_HOSTNAME'..."
-sleep 10
-
+sleep 2
 cd /etc
 rm -rf hosts
 wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/hosts
