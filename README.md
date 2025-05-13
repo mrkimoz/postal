@@ -11,7 +11,7 @@ curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/main.sh | 
 
 ## Installing Web/API Servers
 ```bash
-https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/web-initialize.sh | bash
+curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/web-initialize.sh | bash
 ```
 
 ## Installing SMTP Servers
