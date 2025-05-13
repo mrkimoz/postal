@@ -23,6 +23,3 @@ apt-get update
 # Install docker
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-# Install Postal Helper
-git clone https://github.com/postalserver/install /opt/postal/install
-sudo ln -s /opt/postal/install/bin/postal /usr/bin/postal
