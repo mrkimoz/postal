@@ -20,6 +20,7 @@ curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/smtp-initi
 ```
 
 ## Installing Hosts File
+
 ```bash
-cd /etc &&  rm -rf hosts && wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/hosts
+curl https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/adjusts.sh
 ```
