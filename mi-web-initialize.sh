@@ -8,17 +8,17 @@
 postal stop
 rm -rf /opt/postal
 rm -rf /usr/bin/postal
-git clone https://github.com/postalserver/install /opt/postal/install
+git clone https://github.com/MissionInbox/postal-install /opt/postal/install
 sudo ln -s /opt/postal/install/bin/postal /usr/bin/postal
 
 # Bootstraping Postal
 postal bootstrap app.obmengine.com
 cd /opt/postal/config/
-wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/API-postal.yml
+wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/mi-web-postal.yml
 mv /opt/postal/config/postal.yml /opt/postal/config/postal.yml.original
-cp -r API-postal.yml postal.yml
+cp -r mi-web-postal.yml postal.yml
 mv /opt/postal/install/docker-compose.yml /opt/postal/install/docker-compose.yml.old
 cd /opt/postal/install/
-wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/WEB-Compose.yml
-cp -r WEB-Compose.yml docker-compose.yml
+wget https://raw.githubusercontent.com/mrkimoz/postal/refs/heads/main/mi-web-compose.yml
+cp -r mi-web-compose.yml docker-compose.yml
 postal start
