@@ -1,6 +1,6 @@
 services:
   web:
-    image: ghcr.io/postalserver/postal:3.3.4
+    image: ghcr.io/missioninbox/postal:3.39.0
     command: postal web-server
     network_mode: host
     volumes:
@@ -12,7 +12,7 @@ services:
 
   runner:
     profiles: ["tools"]
-    image: ghcr.io/postalserver/postal:3.3.4
+    image: ghcr.io/missioninbox/postal:3.39.0
     command: postal
     network_mode: host
     volumes:
