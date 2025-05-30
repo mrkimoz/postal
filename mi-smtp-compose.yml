@@ -1,6 +1,6 @@
 services:
   smtp:
-    image: ghcr.io/postalserver/postal:3.3.4
+    image: ghcr.io/missioninbox/postal:3.39.0
     command: postal smtp-server
     network_mode: host
     cap_add:
@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
 
   worker:
-    image: ghcr.io/postalserver/postal:3.3.4
+    image: ghcr.io/missioninbox/postal:3.39.0
     command: postal worker
     network_mode: host
     volumes:
@@ -19,7 +19,7 @@ services:
 
   runner:
     profiles: ["tools"]
-    image: ghcr.io/postalserver/postal:3.3.4
+    image: ghcr.io/missioninbox/postal:3.39.0
     command: postal
     network_mode: host
     volumes:
